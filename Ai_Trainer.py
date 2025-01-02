@@ -10,13 +10,12 @@ while True:
     # img = cv2.resize(img, (1280,720))  
     img = cv2.imread("ai-trainer/test.png")
 
-    img = detector.findPose(img) 
+    img = detector.findPose(img,False) 
     lmlist = detector.findPosition(img,False)
     # print(lmlist) 
 
     if len(lmlist) != 0:
-        pass 
-    
+        detector.findAngle(img,12,14,16)
 
 
     cv2.imshow("Image", img) 

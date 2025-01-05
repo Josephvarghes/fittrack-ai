@@ -38,7 +38,7 @@ class poseDetector():
         if self.result.pose_landmarks:
             for id, lm in enumerate(self.result.pose_landmarks.landmark):
                 h, w, c = img.shape 
-                # print(id, lm)
+               
                 cx,cy = int(lm.x*w), int(lm.y*h)  
                 self.lmList.append([id, cx, cy]) 
                 if draw:
@@ -55,7 +55,7 @@ class poseDetector():
         if angle < 0:
             angle += 360
         # angle = abs(angle)
-        # print(angle)
+       
         if draw:
             cv2.line(img, (x1,y1), (x2,y2),(255,255,255),3)
             cv2.line(img, (x3,y3), (x2,y2),(255,255,255),3)

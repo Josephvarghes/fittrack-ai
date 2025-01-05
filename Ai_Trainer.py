@@ -12,7 +12,7 @@ while True:
 
     img = detector.findPose(img,False) 
     lmlist = detector.findPosition(img,False)
-    # print(lmlist) 
+    
 
     if len(lmlist) != 0:
         # right arm

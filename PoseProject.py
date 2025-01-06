@@ -2,6 +2,7 @@ import PoseModule as pm
 import cv2 
 import time 
 
+# reading video from the folder present current project directory
 cap = cv2.VideoCapture('../Videos/1_1.mp4') 
 pTime = 0 
 detector = pm.poseDetector()
@@ -17,4 +18,4 @@ while True:
     pTime = cTime 
     cv2.putText(img, str(int(fps)),(70,50), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 3) 
     cv2.imshow("Image", img)  
-    cv2.waitKey(1)
+    cv2.waitKey(1) 

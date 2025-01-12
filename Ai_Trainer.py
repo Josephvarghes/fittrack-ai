@@ -18,7 +18,7 @@ while True:
 
     if len(lmlist) != 0:
         # right arm
-        # detector.findAngle(img,12,14,16)
+        
 
         # lef arm
         angle = detector.findAngle(img,11,13,15)

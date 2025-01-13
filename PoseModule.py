@@ -32,7 +32,7 @@ class poseDetector():
             if draw:     
                 self.mpDraw.draw_landmarks(img, self.result.pose_landmarks,self.mPose.POSE_CONNECTIONS)
         return img 
-    
+    #to find specific position
     def findPosition(self,img, draw=True): 
         self.lmList = []
         if self.result.pose_landmarks:

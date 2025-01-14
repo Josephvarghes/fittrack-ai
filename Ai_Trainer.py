@@ -24,7 +24,7 @@ while True:
         angle = detector.findAngle(img,11,13,15)
         per = np.interp(angle,(194,320),(0,100)) 
         bar = np.interp(angle,(194,310),(650,100))
-        # print(angle,per) 
+        
 
        
         #check for the dumbell curls 
@@ -53,7 +53,7 @@ while True:
     pTime = cTime
     cv2.putText(img, str(int(fps)),(50,100),cv2.FONT_HERSHEY_PLAIN,5,(255,0,0),5) 
 
-
+    #show the output
     cv2.imshow("Image", img) 
     cv2.waitKey(1)
 

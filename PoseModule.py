@@ -55,7 +55,7 @@ class poseDetector():
         if angle < 0:
             angle += 360
         
-       
+        #draw the specific area
         if draw:
             cv2.line(img, (x1,y1), (x2,y2),(255,255,255),3)
             cv2.line(img, (x3,y3), (x2,y2),(255,255,255),3)
